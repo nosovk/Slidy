@@ -1,5 +1,7 @@
 <script lang="ts" context="module">
 	import Slidy from "../components/Slidy/Slidy.svelte";
+	import Fullscreen from "../components/Fullscreen/Fullscreen.svelte";
+
 	import { ControlPanel, Sidemenu } from "./components";
 	import { getRandomSlides } from "@slidy/assets/scripts";
 	import { version } from "../../package.json";
@@ -83,7 +85,7 @@
 
 <main>
 	{#await items then slides}
-		<Slidy
+		<Fullscreen
 			{animation}
 			{axis}
 			{background}
