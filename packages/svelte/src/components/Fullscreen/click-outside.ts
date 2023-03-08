@@ -8,10 +8,8 @@ const clickOutside: Action<HTMLElement, (() => void)> = (node, handler) => {
     }
   };
 
-  const unsubscribe = listen(document, 'click', handleClick as any, true);
-
   return {
-    destroy: unsubscribe,
+    destroy: listen(document, 'click', handleClick as any, true),
   }
 }
 
