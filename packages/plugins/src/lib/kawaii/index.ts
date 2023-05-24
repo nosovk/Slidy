@@ -1,0 +1,1 @@
+export { kawaii } from './kawaii'

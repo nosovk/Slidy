@@ -5,4 +5,5 @@ export { fool } from './lib/fool';
 export { autoplay } from './lib/autoplay';
 export { audio } from './lib/audio';
 export { share } from './lib/share';
+export { kawaii } from './lib/kawaii';
 export type { PluginArgs, PluginFunc } from './types';
