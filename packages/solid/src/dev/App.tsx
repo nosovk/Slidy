@@ -100,7 +100,7 @@ const App: Component = () => {
                         setIndex={setIndex}
                         groups={groups()}
                         vertical={vertical()}
-                        plugins={[autoplay({ i18n: i18nDefaults, duration: 1500, delay: 1000, autoplay: false }), kawaii({ count: 4 })]}
+                        plugins={[autoplay({ i18n: i18nDefaults, duration: 1500, delay: 1000, autoplay: false }), kawaii({ count: 2 })]}
                     />
                 </Show>
             </main>

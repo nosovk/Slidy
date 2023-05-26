@@ -54,11 +54,11 @@ class KawaiiCharacter extends HTMLElement {
 
     set index(value: number) {
         this.style.setProperty(
-            `--${value % 2 == 0 ? 'left' : 'right'}`,
+            `--${value % 2 == 0 ? 'right' : 'left'}`,
             '0'
         );
         this.style.setProperty(
-            `--${(value % 2 == 0 ? value : value - 1) == 0 ? 'top' : 'bottom'}`,
+            `--${(value % 2 == 0 ? value : value - 1) == 0 ? 'bottom' : 'top'}`,
             '0'
         );
     }
